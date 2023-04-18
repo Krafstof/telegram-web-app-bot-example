@@ -391,6 +391,7 @@
         initData: Telegram.WebApp.initData || '',
         initDataUnsafe: Telegram.WebApp.initDataUnsafe || {},
         MainButton: Telegram.WebApp.MainButton,
+        BackButton: Telegram.WebApp.BackButton,
 
         init(options) {
             document.body.style.visibility = '';
@@ -678,6 +679,7 @@
             DemoApp.init();
             document.body.classList.add('gray');
             Telegram.WebApp.setHeaderColor('secondary_bg_color');
+            Telegram.WebApp.BackButton.show();
         }
     };
 
